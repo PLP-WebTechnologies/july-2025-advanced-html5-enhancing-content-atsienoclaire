@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        header, section {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Content Showcase & Form</h1>
+    <p>This page demonstrates lists, tables, and embedded media, followed by a structured HTML5 form with built-in validation.</p>
+</header>
+
+<section>
+    <h2>📋 My Favorite Programming Languages</h2>
+    <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ul>
+
+    <h2>📚 Steps to Create a Web Page</h2>
+    <ol>
+        <li>Plan your content</li>
+        <li>Write HTML structure</li>
+        <li>Style with CSS</li>
+        <li>Add interactivity with JS</li>
+    </ol>
+
+    <h2>💡 Common Web Development Terms</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Standard markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Language used to style HTML content.</dd>
+        <dt>JavaScript</dt>
+        <dd>Programming language for web interactivity.</dd>
+    </dl>
+</section>
+
+<section>
+    <h2>📊 Web Technology Popularity</h2>
+    <table>
+        <caption>Survey Results 2025</caption>
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Popularity (%)</th>
+                <th>Learning Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JavaScript</td>
+                <td>95%</td>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>90%</td>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>80%</td>
+                <td>Moderate</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>🎥 Embedded Media</h2>
+    <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Sample Image">
+        <figcaption>A placeholder image representing a web project.</figcaption>
+    </figure>
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<section>
+    <h2>📝 HTML5 Registration Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+254\d{9}$" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="interests">Select Your Interests:</label>
+            <select id="interests" name="interests" required>
+                <option value="">-- Choose an option --</option>
+                <option value="webdev">Web Development</option>
+                <option value="mobile">Mobile Apps</option>
+                <option value="ai">Artificial Intelligence</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the Terms & Conditions
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</section>
+
+</body>
+</html>
